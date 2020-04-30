@@ -1,0 +1,42 @@
+body{
+
+    background-image: url('/static/a1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+
+.us{
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    width: 500px; 
+    margin-top: 10%;
+    margin-left: 30%;
+    min-width: 0;  
+}
+.us input
+{
+    margin-left: 3%;
+    width: 200px;
+}
+label {
+    width: 100px ;
+}
+button{       
+    margin-bottom: 10px ;
+    width: 150px ;  
+    padding-bottom: 40%;      
+}
+
+#adp1{
+    color: white;
+    font-size: 15px;
+}
+#ahe1{
+    color: whitesmoke;
+}

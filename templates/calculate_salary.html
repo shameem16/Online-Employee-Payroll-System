@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee Details</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/calculate_salary.css')}}">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/back">AB Cosultancies</a>
+          </div>
+          <div id="n1" id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">Home</a></li> -->
+              <!-- <li><a href="#">Practice</a></li>
+              <li><a href="#">Compete</a></li>
+              <li><a href="#">Discuss</a></li>                       -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+             <li id="whr">Welcome HR :)</li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+       <form id="adde" action="/cal_sal" method="POST">
+        <div>
+            <h2>Enter Employee and month Details</h2>
+            <label for="empid">ID:</label>
+            <input type="text" id="empid" name="empid" placeholder="ID">
+            <br>
+            <br>
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month" placeholder="month">
+            <br>
+            <br>
+            <input type="submit" class="btn btn-mg btn-success" id="submit_button" name="submit_button" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

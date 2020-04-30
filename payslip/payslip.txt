@@ -1,0 +1,13 @@
+ID:cb.en.u4cse17454
+Month:2019-12
+Basicpay:290000
+DA:100
+HRA:1000
+CCA:1000
+Transport allowance:1000
+Income tax:1000
+Proffesional tax:1000
+EMI:130
+Total Earnings:293100
+Total deductuions:2130
+Total salary:290970

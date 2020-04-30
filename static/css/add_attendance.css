@@ -1,0 +1,35 @@
+#whr{
+    padding-top: 10%;
+    font-size: 20px;
+}
+#adde{
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 100%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    width: 500px;
+    margin:auto auto;
+    margin-top: 6%;
+}
+#adde h2{
+    padding: 34px;
+    text-align: center;
+}
+#adde input{
+    margin-left: 3%;
+    margin:auto auto;
+}
+
+label{
+    width: 100px ;
+}
+body{
+
+    background-image: url('/static/a1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}

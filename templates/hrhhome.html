@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/hrhome.css')}}">
+</head>
+<body >
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/back">AB Cosultancies</a>
+          </div>
+          <div id="n1" id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">Home</a></li> -->
+              <!-- <li><a href="#">Practice</a></li>
+              <li><a href="#">Compete</a></li>
+              <li><a href="#">Discuss</a></li>                       -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+             <li id="whr">Welcome HR :)</li>
+                 <a class="navbar-item navbar-right" href="/logout" id="log">&nbsp;<-Logout</a>
+            </ul>
+          </div>
+        </div>
+       </nav>
+        <form action="/hrhome" method="POST">
+               <div>
+                   <input type="submit" class="btn btn-lg btn-success" name="btn1" id="btn1" placeholder="Add an Employee" value="Add an Employee">
+                   <input type="submit" name="btn1" id="btn3" class="btn btn-lg btn-warning" placeholder="Add Attendance" value="Add Attendance">
+                   <input type="submit" name="btn1" id="btn4" class="btn btn-lg btn-danger" placeholder="Calculate Salary" value="Calculate Salary">
+
+                </div>
+
+                <div>
+                    <input type="submit" name="btn1" id="btn2" class="btn btn-lg btn-primary" placeholder="Manage Employee Details" value="Manage Employee Details">
+
+                </div>
+            <br>
+            <br>
+            <h4>{{msg}}</h4>
+         </form>
+
+                
+
+                   
+</body>
+
+</html>

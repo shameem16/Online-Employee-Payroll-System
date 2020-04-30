@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee Details</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/calculate_salary.css')}}">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/back">AB Cosultancies</a>
+          </div>
+          <div id="n1" id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">Home</a></li> -->
+              <!-- <li><a href="#">Practice</a></li>
+              <li><a href="#">Compete</a></li>
+              <li><a href="#">Discuss</a></li>                       -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+             <li id="whr">Welcome HR :)</li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+       <form id="adde" action="/cal_sal_emp" method="POST">
+        <div>
+            <h2>Enter salary details of employee </h2>
+            <h4>Employee : {{id}} , Month:{{month}}</h4>
+            <h4>Basic pay : {{basicpay}}</h4>
+            <input type="hidden" name="empid" value={{id}}>
+            <input type="hidden" name="month" value={{month}}>
+            <input type="hidden" name="basicpay" value={{basicpay}}>
+            <label for="da">DA:</label>
+            <input type="number" id="da" name="da" placeholder="DA">
+            <br>
+            <br>
+            <label for="hra">HRA:</label>
+            <input type="number" id="hra" name="hra" placeholder="HRA">
+            <br>
+            <br>
+            <label for="ta">Transport allowance:</label>
+            <input type="number" id="ta" name="ta" placeholder="Transport allowance">
+            <br>
+            <br>
+            <label for="ca">City allowance:</label>
+            <input type="number" id="ca" name="ca" placeholder="City allowance">
+            <br>
+            <br>
+            <label for="it">Income tax:</label>
+            <input type="number" id="it" name="it" placeholder="Income tax">
+            <br>
+            <br>
+            <label for="pt">Prof tax:</label>
+            <input type="number" id="pt" name="pt" placeholder="prof tax">
+            <br>
+            <br>
+            <label for="emi">EMI:</label>
+            <input type="number" id="emi" name="emi" placeholder="EMI">
+            <br>
+            <br>
+            <input type="submit" class="btn btn-mg btn-success" id="submit_button" name="submit_button" value="Generate and send payslip">
+        </div>
+    </form>
+</body>
+</html>
