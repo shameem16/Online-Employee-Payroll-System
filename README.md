@@ -1,2 +1,2 @@
 # Online-Employee-Payroll-Management-
-open lab project
+A simple web app developed using Python Flask
